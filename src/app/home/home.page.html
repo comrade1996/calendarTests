@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank 4
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-calendar [(ngModel)]="this.dateRange"
+  (onChange)="onChange($event)"
+  [options]="option"
+  type="string"
+  format="YYYY-MM-DD">
+</ion-calendar>
+</ion-content>
